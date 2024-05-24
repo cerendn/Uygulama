@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  text-align: center;
+  margin: 20px auto;
+  max-width: 600px;
+}
+.note-section {
+  display: flex;
+  justify-content: space-between;
+}
+h1 {
+  color: fuchsia;
+}
+.notes {
+  border: 1px solid plum;
+  padding: 20px;
+  min-width: 250px;
+  color: rgb(255, 60, 255);
+}
+.note {
+  border-bottom: 1px solid plum;
+  padding: 10px;
+}
+.add-note {
+  color: rgb(255, 60, 255);
+}
