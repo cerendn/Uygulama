@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const NewResipeForm = () => {
+const NewRecipeForm = () => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [imageUrl, setImageUrl] = useState("");
@@ -42,4 +42,4 @@ const NewResipeForm = () => {
   );
 };
 
-export default NewResipeForm;
+export default NewRecipeForm;
