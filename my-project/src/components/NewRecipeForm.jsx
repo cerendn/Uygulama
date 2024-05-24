@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import axios from "axios";
 
-const NewRecipeForm = () => {
+const NewRecipeForm = ({ addRecipeToList }) => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [imageUrl, setImageUrl] = useState("");
@@ -8,6 +9,16 @@ const NewRecipeForm = () => {
   //sayfanın yeniden refresh edilmesi engeller ve inputları temizler
   const handleSubmit = (event) => {
     event.preventDefault();
+    axios
+      .post("http://localhost:3000/recipes", { title, description, imageUrl })
+      .then((response) => {
+        console.log(response.data);
+        addRecipeToList(response.data);
+      })
+      .catch((error) => {
+        console.error("new recipe error:", error);
+      });
+
     setTitle("");
     setDescription("");
     setImageUrl("");

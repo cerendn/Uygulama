@@ -17,12 +17,16 @@ function App() {
         console.log("veri alınma hatası:", error);
       });
   }, []);
+  //func burda tanımlanmasının nedeni statelerin burda olması
+  const addRecipeToList = (newRecipe) => {
+    setFaceRecipes((prevRecipes) => [...prevRecipes, newRecipe]);
+  };
 
   return (
     <>
       <Header />
       <Home />
-      <NewRecipeForm />
+      <NewRecipeForm addRecipeToList={addRecipeToList} />
       <RecipeList faceRecipes={faceRecipes} />
     </>
   );

@@ -1,82 +1,76 @@
 {
-"recipes": [
+  "recipes": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Hydrating Aloe Vera Mask",
-      "description":
-        "A soothing and hydrating mask that calms irritated skin and adds a natural glow.",
-      "image":
-        "https://i0.wp.com/post.healthline.com/wp-content/uploads/2019/08/Aloe_Vera_1296x728-header-1-1-1296x728.jpg?w=1155&h=1528"
+      "description": "A soothing and hydrating mask that calms irritated skin and adds a natural glow.",
+      "imageUrl": "https://i0.wp.com/post.healthline.com/wp-content/uploads/2019/08/Aloe_Vera_1296x728-header-1-1-1296x728.jpg?w=1155&h=1528"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Exfoliating Coffee Scrub",
-      "description":
-        "An invigorating scrub that exfoliates dead skin cells and improves circulation.",
-      "image":
-        "https://misswish.com/wp-content/uploads/2020/05/coffee-and-sugar-face-scrub-5.jpg"
+      "description": "An invigorating scrub that exfoliates dead skin cells and improves circulation.",
+      "imageUrl": "https://misswish.com/wp-content/uploads/2020/05/coffee-and-sugar-face-scrub-5.jpg"
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "Brightening Turmeric Mask",
-      "description":
-        "A brightening mask that reduces inflammation and evens skin tone.",
-      "image":
-        "https://d1f34ajap1v5tm.cloudfront.net/image/7-Ways-To-Use-Turmeric-for-Glowing-Skin-Blog-Cover.jpg"
+      "description": "A brightening mask that reduces inflammation and evens skin tone.",
+      "imageUrl": "https://d1f34ajap1v5tm.cloudfront.net/image/7-Ways-To-Use-Turmeric-for-Glowing-Skin-Blog-Cover.jpg"
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "Soothing Oatmeal Mask",
-      "description":
-        "A calming mask that soothes irritated skin and provides gentle exfoliation.",
-      "image":
-        "https://assets.vogue.in/photos/5d036afca9f58c7fdc1276a8/2:3/w_2560%2Cc_limit/oatmeal.jpg"
+      "description": "A calming mask that soothes irritated skin and provides gentle exfoliation.",
+      "imageUrl": "https://assets.vogue.in/photos/5d036afca9f58c7fdc1276a8/2:3/w_2560%2Cc_limit/oatmeal.jpg"
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "Clarifying Green Tea Mask",
-      "description":
-        "A detoxifying mask that provides antioxidants and reduces redness.",
-      "image":
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbnby6Dp9qAe509oVuK-kvkC3_CxCT6XuUtJOzoB9IUg&s"
+      "description": "A detoxifying mask that provides antioxidants and reduces redness.",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbnby6Dp9qAe509oVuK-kvkC3_CxCT6XuUtJOzoB9IUg&s"
     },
     {
-      "id": 6,
+      "id": "6",
       "title": "Moisturizing Avocado Mask",
-      "description":
-        "A rich mask that deeply moisturizes and nourishes the skin.",
-      "image":
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRsisIRzXSjLJUQK2mnuUcc8h9LwRoFPkCl0aGDw4KRQ&s"
+      "description": "A rich mask that deeply moisturizes and nourishes the skin.",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRsisIRzXSjLJUQK2mnuUcc8h9LwRoFPkCl0aGDw4KRQ&s"
     },
     {
-      "id": 7,
+      "id": "7",
       "title": "Calming Cucumber Mask",
       "description": "A refreshing mask that soothes and cools the skin.",
-      "image":
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr_gQp7yrNLVUWVy3xoYo8Qn4z-7sGx44cJEYBmI9lCg&s"
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr_gQp7yrNLVUWVy3xoYo8Qn4z-7sGx44cJEYBmI9lCg&s"
     },
     {
-      "id": 8,
+      "id": "8",
       "title": "Revitalizing Papaya Mask",
       "description": "A rejuvenating mask that helps to revitalize dull skin.",
-      "image":
-        "https://www.stylecraze.com/wp-content/uploads/2013/01/7-Papaya-Face-Packs-For-Glowing-Fair-And-Smooth-Skin-1.jpg"
+      "imageUrl": "https://www.stylecraze.com/wp-content/uploads/2013/01/7-Papaya-Face-Packs-For-Glowing-Fair-And-Smooth-Skin-1.jpg"
     },
     {
-      "id": 9,
+      "id": "9",
       "title": "Detoxifying Charcoal Mask",
-      "description":
-        "A purifying mask that helps to remove impurities and toxins.",
-      "image":
-        "https://thecoconutmama.com/wp-content/uploads/2019/03/homemade-charcoal-mask-shut-scaled.webp"
+      "description": "A purifying mask that helps to remove impurities and toxins.",
+      "imageUrl": "https://thecoconutmama.com/wp-content/uploads/2019/03/homemade-charcoal-mask-shut-scaled.webp"
     },
     {
-      "id": 10,
+      "id": "10",
       "title": "Anti-Aging Honey Mask",
-      "description":
-        "A nourishing mask that helps to reduce the signs of aging.",
-      "image":
-        "https://mindbodygreen-res.cloudinary.com/image/upload/c_fill,w_2000,h_1200,g_auto,fl_lossy,f_jpg/org/akeiercxcjr7ydfoe.jpg"
+      "description": "A nourishing mask that helps to reduce the signs of aging.",
+      "imageUrl": "https://mindbodygreen-res.cloudinary.com/image/upload/c_fill,w_2000,h_1200,g_auto,fl_lossy,f_jpg/org/akeiercxcjr7ydfoe.jpg"
+    },
+    {
+      "id": "9389",
+      "title": "Apple Mask",
+      "description": "An apple mask is a revitalizing and nourishing treatment that hydrates the skin, reduces inflammation, and enhances your natural glow. Rich in vitamins and antioxidants, this mask gently exfoliates and rejuvenates, leaving your skin feeling refreshed and radiant.",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtEPOqjlh7iScyhwZ5lvvR6g031viHdcLcdk4hp0lmvA&s"
+    },
+    {
+      "id": "6b0e",
+      "title": "Kiwi Mask",
+      "description": "A kiwi mask is a refreshing and revitalizing treatment that nourishes, hydrates, and enhances your skin's natural glow.",
+      "imageUrl": "https://i0.wp.com/www.yaseminamato.com/wp-content/uploads/2017/01/kivi-maskeleri.jpg?resize=640%2C440"
     }
   ]
 }
