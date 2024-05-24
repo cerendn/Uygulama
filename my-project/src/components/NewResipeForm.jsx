@@ -5,6 +5,7 @@ const NewResipeForm = () => {
   const [description, setDescription] = useState("");
   const [imageUrl, setImageUrl] = useState("");
 
+  //sayfanın yeniden refresh edilmesi engeller ve inputları temizler
   const handleSubmit = (event) => {
     event.preventDefault();
     setTitle("");
@@ -23,11 +24,13 @@ const NewResipeForm = () => {
           onChange={(event) => setTitle(event.target.value)}
         />
         <textarea
+          value={description}
           placeholder="Mask Resipe Description"
           required
           onChange={(event) => setDescription(event.target.value)}
         />
         <input
+          value={imageUrl}
           type="text"
           placeholder="image Url"
           required
