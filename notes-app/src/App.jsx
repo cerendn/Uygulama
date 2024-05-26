@@ -10,10 +10,15 @@ function App() {
     setNotes((prevNotes) => [...prevNotes, { id: Date.now(), text }]);
   };
 
+  const deleteNote = (id) => {
+    const updatedNotes = notes.filter((note) => note.id !== id);
+    setNotes(updatedNotes);
+  };
+
   return (
     <div className="app">
       <div className="note-section">
-        <Notes notes={notes} />
+        <Notes notes={notes} deleteNote={deleteNote} />
         <AddNote addNote={addNote} />
       </div>
     </div>
