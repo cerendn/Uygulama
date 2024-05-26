@@ -1,6 +1,6 @@
 import React from "react";
 
-const Notes = ({ notes, deleteNote }) => {
+const Notes = ({ notes, deleteNote, startEditing }) => {
   return (
     <div className="notes">
       <h2>Notlarım</h2>
@@ -8,7 +8,7 @@ const Notes = ({ notes, deleteNote }) => {
         <div className="note" key={note.id}>
           <p> {note.text} </p>
           <div className="buttons">
-            <button>Düzenle</button>
+            <button onClick={() => startEditing(note)}>Düzenle</button>
             <button onClick={() => deleteNote(note.id)}>Sil</button>
           </div>
         </div>

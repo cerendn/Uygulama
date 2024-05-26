@@ -47,3 +47,12 @@ h2 {
 .add-note button {
   width: 100%;
 }
+.edit-note {
+  border: 1px solid plum;
+  margin-top: 20px;
+  padding: 10px;
+}
+.edit-note input {
+  width: 100%;
+  margin-bottom: 10px;
+}
