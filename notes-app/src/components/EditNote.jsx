@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 
-const EditNote = ({ updateNote }) => {
-  const [text, setText] = useState("");
+const EditNote = ({ updateNote, editNote }) => {
+  const [text, setText] = useState(editNote.text);
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    updateNote(note.id, text);
+    updateNote(editNote.id, text);
   };
   return (
     <div className="edit-note">

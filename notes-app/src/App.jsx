@@ -26,6 +26,7 @@ function App() {
       note.id === id ? { ...note, text } : note
     );
     setNotes(updatedNotes);
+    setEditNote("");
   };
 
   return (
@@ -39,7 +40,7 @@ function App() {
         <AddNote addNote={addNote} />
       </div>
 
-      {editNote && <EditNote updateNote={updateNote} />}
+      {editNote && <EditNote updateNote={updateNote} editNote={editNote} />}
     </div>
   );
 }
