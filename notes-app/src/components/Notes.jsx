@@ -5,8 +5,8 @@ const Notes = ({ notes }) => {
     <div className="notes">
       <h2>Notlarım</h2>
       {notes.map((note) => (
-        <div className="note">
-          <p> {note} </p>
+        <div className="note" key={note.id}>
+          <p> {note.text} </p>
           <div className="buttons">
             <button>Düzenle</button>
             <button>Sil</button>

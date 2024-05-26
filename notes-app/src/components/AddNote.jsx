@@ -1,12 +1,13 @@
 import React from "react";
 import { useState } from "react";
 
-const AddNote = () => {
+const AddNote = ({ addNote }) => {
   //burada bulunan inputu takip etmek için oluşturulur
   const [note, setNote] = useState("");
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    addNote(note);
     setNote("");
   };
   return (

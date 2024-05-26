@@ -6,15 +6,16 @@
 
 .app {
   text-align: center;
-  margin: 20px auto;
+  margin: 30px auto;
   max-width: 600px;
 }
 .note-section {
   display: flex;
   justify-content: space-between;
 }
-h1 {
+h2 {
   color: fuchsia;
+  margin-top: 10px;
 }
 .notes {
   border: 1px solid plum;
@@ -28,4 +29,21 @@ h1 {
 }
 .add-note {
   color: rgb(255, 60, 255);
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.add-note {
+  border: 1px solid plum;
+  flex: 1;
+  padding: 20px;
+  margin-left: 10px;
+}
+.add-note input {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.add-note button {
+  width: 100%;
 }
