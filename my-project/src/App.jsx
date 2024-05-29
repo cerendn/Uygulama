@@ -10,16 +10,31 @@ function App() {
   const [faceRecipes, setFaceRecipes] = useState([]);
 
   useEffect(() => {
-    axios
-      .get("http://localhost:3000/recipes")
-      .then((response) => setFaceRecipes(response.data))
-      .catch((error) => {
-        console.log("veri alınma hatası:", error);
-      });
+    const getRecipes = async () => {
+      try {
+        const response = await axios.get("http://localhost:3000/recipes");
+        setFaceRecipes(response.data);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+
+    getRecipes();
   }, []);
   //func burda tanımlanmasının nedeni statelerin burda olması
-  const addRecipeToList = (newRecipe) => {
-    setFaceRecipes((prevRecipes) => [...prevRecipes, newRecipe]);
+  const addRecipeToList = async (title, description, imageUrl) => {
+    const newRecipe = { title, description, imageUrl };
+    try {
+      const response = await axios.post(
+        "http://localhost:3000/recipes",
+        newRecipe
+      );
+      if (response.status === 201) {
+        setFaceRecipes((prevRecipes) => [...prevRecipes, response.data]);
+      }
+    } catch (error) {
+      console.error("Maske ekleme hatası:", error);
+    }
   };
 
   return (
