@@ -1,10 +1,14 @@
 import RecipeCard from "./RecipeCard";
 
-const RecipeList = ({ faceRecipes }) => {
+const RecipeList = ({ faceRecipes, deleteRecipe, isLoading }) => {
   return (
-    <div>
+    <div className="recipe-list">
       {faceRecipes.map((faceResipe) => (
-        <RecipeCard key={faceResipe.id} {...faceResipe} />
+        <RecipeCard
+          key={faceResipe.id}
+          deleteRecipe={deleteRecipe}
+          {...faceResipe}
+        />
       ))}
     </div>
   );

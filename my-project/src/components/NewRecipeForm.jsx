@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const NewRecipeForm = ({ addRecipeToList }) => {
+const NewRecipeForm = ({ addRecipeToList, isLoading }) => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [imageUrl, setImageUrl] = useState("");
@@ -48,7 +48,9 @@ const NewRecipeForm = ({ addRecipeToList }) => {
           onChange={(event) => setImageUrl(event.target.value)}
         />
         {imageErr && <p>Title can not be empty!</p>}
-        <button type="submit">Add Mask</button>
+        <button type="submit">
+          {isLoading.add ? "Loading..." : "Add Mask"}
+        </button>
       </form>
     </div>
   );
