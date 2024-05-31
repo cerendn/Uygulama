@@ -4,18 +4,15 @@ import { ThemeContex } from "../context/ThemeContext";
 const ThemeSlider = () => {
   const { theme, toggleTheme } = useContext(ThemeContex);
 
-  const [isToggled, setIsToggle] = useState(theme === "dark");
+  // const [isToggled, setIsToggle] = useState(theme === "dark");
 
   const handleToggle = () => {
-    setIsToggle(!isToggled);
+    // setIsToggle(!isToggled);
     toggleTheme();
   };
 
   return (
-    <div
-      onClick={handleToggle}
-      className={`slider-container light ${isToggled ? "dark" : "light"}`}
-    >
+    <div onClick={handleToggle} className={`slider-container light ${theme}`}>
       <div className="slider-button"></div>
     </div>
   );

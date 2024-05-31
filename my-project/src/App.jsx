@@ -4,15 +4,19 @@ import Home from "./components/Home";
 import NewRecipeForm from "./components/NewRecipeForm";
 import RecipeList from "./components/RecipeList";
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import { ThemeContex } from "./context/ThemeContext";
 
 function App() {
   const [faceRecipes, setFaceRecipes] = useState([]);
+  //
   const [isLoading, setisLoading] = useState({
     read: false,
     delete: false,
     add: false,
   });
+
+  const { theme } = useContext(ThemeContex);
 
   useEffect(() => {
     const getRecipes = async () => {
@@ -26,7 +30,7 @@ function App() {
 
     getRecipes();
   }, []);
-  //func burda tanımlanmasının nedeni statelerin burda olması
+  //func burda tanımlanmasının nedeni statelerin burda olması,ekleme funct.
   const addRecipeToList = async (title, description, imageUrl) => {
     const newRecipe = { title, description, imageUrl };
     setisLoading((prevIsLoading) => ({ ...prevIsLoading, add: true }));
@@ -57,7 +61,7 @@ function App() {
 
   return (
     <>
-      <div className="app">
+      <div className={`app ${theme}`}>
         <Header />
         <Home />
         <NewRecipeForm

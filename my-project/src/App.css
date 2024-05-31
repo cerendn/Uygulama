@@ -27,10 +27,16 @@
   color: white;
   text-decoration: none;
 }
+
+.dark {
+  background-color: darkgreen;
+  color: white;
+}
 /*Home Section*/
 .home {
   text-align: center;
   padding: 2rem 3rem;
+  color: green;
 }
 /* New Recipe Form Section */
 .new-recipe-form {
@@ -47,7 +53,7 @@
   width: 100%;
 }
 .btn-submit {
-  background-color: gray;
+  background-color: green;
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 8px;
@@ -55,12 +61,12 @@
   border: none;
 }
 .btn-submit:hover {
-  background-color: green;
+  background-color: rgb(255, 129, 32);
 }
 .new-recipe-form .input-err {
   font-size: 12px;
   font-weight: 700;
-  color: brown;
+  color: rgb(255, 129, 32);
   margin: 2px 0 0 10px;
 }
 /* Recipe List Section */
@@ -85,7 +91,7 @@
 }
 .btn-delete {
   margin: 0 auto;
-  background-color: gray;
+  background-color: rgb(255, 129, 32);
   color: white;
   border: none;
   border-radius: 5px;
