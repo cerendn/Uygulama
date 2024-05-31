@@ -55,7 +55,7 @@ const NewRecipeForm = ({ addRecipeToList, isLoading }) => {
               className="input-err
           "
             >
-              Title can not be empty!
+              Description can not be empty!
             </p>
           )}
         </div>
@@ -63,7 +63,7 @@ const NewRecipeForm = ({ addRecipeToList, isLoading }) => {
           <input
             value={imageUrl}
             type="text"
-            placeholder="image Url"
+            placeholder="image URL"
             onChange={(event) => setImageUrl(event.target.value)}
           />
           {imageErr && (
@@ -71,7 +71,7 @@ const NewRecipeForm = ({ addRecipeToList, isLoading }) => {
               className="input-err
           "
             >
-              Title can not be empty!
+              İmage can not be empty!
             </p>
           )}
         </div>
