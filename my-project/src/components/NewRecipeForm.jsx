@@ -27,28 +27,55 @@ const NewRecipeForm = ({ addRecipeToList, isLoading }) => {
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
-        <input
-          value={title}
-          type="text"
-          placeholder="Mask Recipe Title"
-          onChange={(event) => setTitle(event.target.value)}
-        />
-        {titleErr && <p>Title can not be empty!</p>}
-        <textarea
-          value={description}
-          placeholder="Mask Resipe Description"
-          onChange={(event) => setDescription(event.target.value)}
-        />
-        {descriptionErr && <p>Title can not be empty!</p>}
-        <input
-          value={imageUrl}
-          type="text"
-          placeholder="image Url"
-          onChange={(event) => setImageUrl(event.target.value)}
-        />
-        {imageErr && <p>Title can not be empty!</p>}
-        <button type="submit">
+      <form className="new-recipe-form" onSubmit={handleSubmit}>
+        <div className="form-control">
+          <input
+            value={title}
+            type="text"
+            placeholder="Mask Recipe Title"
+            onChange={(event) => setTitle(event.target.value)}
+          />
+          {titleErr && (
+            <p
+              className="input-err
+          "
+            >
+              Title can not be empty!
+            </p>
+          )}
+        </div>
+        <div className="form-control">
+          <textarea
+            value={description}
+            placeholder="Mask Resipe Description"
+            onChange={(event) => setDescription(event.target.value)}
+          />
+          {descriptionErr && (
+            <p
+              className="input-err
+          "
+            >
+              Title can not be empty!
+            </p>
+          )}
+        </div>
+        <div className="form-control">
+          <input
+            value={imageUrl}
+            type="text"
+            placeholder="image Url"
+            onChange={(event) => setImageUrl(event.target.value)}
+          />
+          {imageErr && (
+            <p
+              className="input-err
+          "
+            >
+              Title can not be empty!
+            </p>
+          )}
+        </div>
+        <button className="btn-submit" type="submit">
           {isLoading.add ? "Loading..." : "Add Mask"}
         </button>
       </form>

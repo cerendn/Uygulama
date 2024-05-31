@@ -57,14 +57,19 @@ function App() {
 
   return (
     <>
-      <Header />
-      <Home />
-      <NewRecipeForm addRecipeToList={addRecipeToList} isLoading={isLoading} />
-      <RecipeList
-        faceRecipes={faceRecipes}
-        deleteRecipe={deleteRecipe}
-        isLoading={isLoading}
-      />
+      <div className="app">
+        <Header />
+        <Home />
+        <NewRecipeForm
+          addRecipeToList={addRecipeToList}
+          isLoading={isLoading}
+        />
+        <RecipeList
+          faceRecipes={faceRecipes}
+          deleteRecipe={deleteRecipe}
+          isLoading={isLoading}
+        />
+      </div>
     </>
   );
 }

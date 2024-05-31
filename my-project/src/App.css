@@ -1,1 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+/*Header Section*/
+.header {
+  background-color: gray;
+  color: white;
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+}
+.navbar ul {
+  display: flex;
+  gap: 10px;
+}
+.navbar ul li {
+  list-style: none;
+}
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+}
+/*Home Section*/
+.home {
+  text-align: center;
+  padding: 2rem 3rem;
+}
+/* New Recipe Form Section */
+.new-recipe-form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+  gap: 1rem;
+}
+.new-recipe-form input,
+.new-recipe-form textarea {
+  font-size: 1rem;
+  padding: 0.5rem;
+  width: 100%;
+}
+.btn-submit {
+  background-color: gray;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+}
+.btn-submit:hover {
+  background-color: green;
+}
+.new-recipe-form .input-err {
+  font-size: 12px;
+  font-weight: 700;
+  color: brown;
+  margin: 2px 0 0 10px;
+}
+/* Recipe List Section */
+.recipe-list {
+  display: flex;
+}

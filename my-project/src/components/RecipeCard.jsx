@@ -8,9 +8,10 @@ const RecipeCard = ({ title, description, imageUrl, deleteRecipe, id }) => {
       <h4> {title} </h4>
       <p> {description} </p>
       <button
-        onClick={() => {
+        //birlikte calıstıgı islemlerden ayrı calısması icin async özl ekleyip tüm btnların loading olmasını engellenir,settimeout ile de yapılabilir
+        onClick={async () => {
           setIsDeletedLoading(true);
-          deleteRecipe(id);
+          await deleteRecipe(id);
           setIsDeletedLoading(false);
         }}
       >

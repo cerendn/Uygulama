@@ -2,14 +2,22 @@ import React from "react";
 
 const Header = () => {
   return (
-    <nav>
-      <div>Recipe Platform</div>
-      <div>
-        <a href="#">Home</a>
-        <a href="#">Add Natural Mask Recipe</a>
-        <a href="#">About Facial Care</a>
-      </div>
-    </nav>
+    <header className="header">
+      <div className="logo">Recipe Platform</div>
+      <nav className="navbar">
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Add Natural Mask Recipe</a>
+          </li>
+          <li>
+            <a href="#">About Facial Care</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
   );
 };
 
