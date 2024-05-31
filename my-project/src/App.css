@@ -96,3 +96,30 @@
 .btn-delete:hover {
   background-color: green;
 }
+
+/* Slider btn */
+.slider-container {
+  width: 50px;
+  height: 25px;
+  background-color: lightgreen;
+  border-radius: 25px;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3 ease;
+}
+.slider-button {
+  width: 20px;
+  height: 20px;
+  background-color: aliceblue;
+  border-radius: 50%;
+  position: absolute;
+  top: 2.5px;
+  left: 2.5px;
+  transition: left 0.3s ease;
+}
+.slider-container.dark {
+  background-color: darkgreen;
+}
+.slider-container.dark .slider-button {
+  left: calc(100% - 22.5px);
+}

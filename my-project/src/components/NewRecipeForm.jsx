@@ -47,7 +47,7 @@ const NewRecipeForm = ({ addRecipeToList, isLoading }) => {
         <div className="form-control">
           <textarea
             value={description}
-            placeholder="Mask Resipe Description"
+            placeholder="Mask Recipe Description"
             onChange={(event) => setDescription(event.target.value)}
           />
           {descriptionErr && (

@@ -1,4 +1,25 @@
-import React from "react";
+import React, { useContext, useState } from "react";
+import { ThemeContex } from "../context/ThemeContext";
+
+const ThemeSlider = () => {
+  const { theme, toggleTheme } = useContext(ThemeContex);
+
+  const [isToggled, setIsToggle] = useState(theme === "dark");
+
+  const handleToggle = () => {
+    setIsToggle(!isToggled);
+    toggleTheme();
+  };
+
+  return (
+    <div
+      onClick={handleToggle}
+      className={`slider-container light ${isToggled ? "dark" : "light"}`}
+    >
+      <div className="slider-button"></div>
+    </div>
+  );
+};
 
 const Header = () => {
   return (
@@ -15,6 +36,7 @@ const Header = () => {
           <li>
             <a href="#">About Facial Care</a>
           </li>
+          <ThemeSlider />
         </ul>
       </nav>
     </header>
