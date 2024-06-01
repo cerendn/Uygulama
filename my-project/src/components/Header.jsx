@@ -1,5 +1,6 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { ThemeContex } from "../context/ThemeContext";
+import { Link } from "react-router-dom";
 
 const ThemeSlider = () => {
   const { theme, toggleTheme } = useContext(ThemeContex);
@@ -25,13 +26,13 @@ const Header = () => {
       <nav className="navbar">
         <ul>
           <li>
-            <a href="#">Home</a>
+            <Link to={"/"}>Home</Link>
           </li>
           <li>
-            <a href="#">Add Natural Mask Recipe</a>
+            <Link to={"/new-recipe"}>Add Natural Mask</Link>
           </li>
           <li>
-            <a href="#">About Facial Care</a>
+            <Link to={"/recipes"}>Facial Care</Link>
           </li>
           <ThemeSlider />
         </ul>
