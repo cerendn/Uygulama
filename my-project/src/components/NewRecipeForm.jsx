@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import { ApiContext } from "../context/ApiContext";
 
-const NewRecipeForm = ({ addRecipeToList, isLoading }) => {
+const NewRecipeForm = () => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [imageUrl, setImageUrl] = useState("");
@@ -8,6 +9,8 @@ const NewRecipeForm = ({ addRecipeToList, isLoading }) => {
   const [titleErr, setTitleErr] = useState(false);
   const [descriptionErr, setDescritionErr] = useState(false);
   const [imageErr, setImageErr] = useState(false);
+
+  const { addRecipeToList, isLoading } = useContext(ApiContext);
 
   //sayfanın yeniden refresh edilmesi engeller ve inputları temizler
   const handleSubmit = (event) => {

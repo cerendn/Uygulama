@@ -1,7 +1,10 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import { ApiContext } from "../context/ApiContext";
 
-const RecipeCard = ({ title, description, imageUrl, deleteRecipe, id }) => {
+const RecipeCard = ({ title, description, imageUrl, id }) => {
   const [isDeletedLoading, setIsDeletedLoading] = useState(false);
+  const { deleteRecipe } = useContext(ApiContext);
+
   return (
     <div className="recipe-card">
       <img className="recipe-image" src={imageUrl} alt={title} />
