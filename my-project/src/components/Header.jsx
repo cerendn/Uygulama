@@ -22,7 +22,7 @@ const ThemeSlider = () => {
 const Header = () => {
   return (
     <header className="header">
-      <div className="logo">Recipe Platform</div>
+      <div className="logo">Skin Care Platform</div>
       <nav className="navbar">
         <ul>
           <li>
@@ -32,7 +32,7 @@ const Header = () => {
             <Link to={"/new-recipe"}>Add Natural Mask</Link>
           </li>
           <li>
-            <Link to={"/recipes"}>Facial Care</Link>
+            <Link to={"/recipes"}>Skin Care</Link>
           </li>
           <ThemeSlider />
         </ul>
