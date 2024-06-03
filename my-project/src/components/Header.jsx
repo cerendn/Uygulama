@@ -32,7 +32,7 @@ const Header = () => {
             <Link to={"/new-recipe"}>Add Natural Mask</Link>
           </li>
           <li>
-            <Link to={"/recipes"}>Skin Care</Link>
+            <Link to={"/login"}>Login</Link>
           </li>
           <ThemeSlider />
         </ul>
