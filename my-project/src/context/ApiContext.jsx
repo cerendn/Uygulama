@@ -1,5 +1,6 @@
 import React, { createContext, useState, useEffect } from "react";
 import axios from "axios";
+import AuthService from "../services/AuthServise";
 
 export const ApiContext = createContext();
 
@@ -26,10 +27,15 @@ export const ApiContextProvider = ({ children }) => {
   const addRecipeToList = async (title, description, imageUrl) => {
     const newRecipe = { title, description, imageUrl };
     setisLoading((prevIsLoading) => ({ ...prevIsLoading, add: true }));
+    const user = AuthService.getCurrentUser();
+    const token = user?.token;
     try {
       const response = await axios.post(
         "http://localhost:3000/recipes",
-        newRecipe
+        newRecipe,
+        {
+          Authorization: `Bearer ${token}`,
+        }
       );
       if (response.status === 201) {
         setFaceRecipes((prevRecipes) => [...prevRecipes, response.data]);
