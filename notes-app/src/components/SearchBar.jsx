@@ -18,6 +18,7 @@ const SearchBar = () => {
     } catch (error) {
       console.error("Veri çekme hatası:", error);
     }
+    setInputValue(data);
   };
   return (
     <div className="searchBar">
