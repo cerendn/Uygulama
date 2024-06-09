@@ -56,3 +56,9 @@ h2 {
   width: 100%;
   margin-bottom: 10px;
 }
+.searchBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}

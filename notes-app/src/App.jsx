@@ -3,6 +3,7 @@ import Notes from "./components/Notes";
 import AddNote from "./components/AddNote";
 import { useState } from "react";
 import EditNote from "./components/EditNote";
+import SearchBar from "./components/SearchBar";
 
 function App() {
   const [notes, setNotes] = useState([]);
@@ -41,6 +42,7 @@ function App() {
       </div>
 
       {editNote && <EditNote updateNote={updateNote} editNote={editNote} />}
+      <SearchBar />
     </div>
   );
 }
